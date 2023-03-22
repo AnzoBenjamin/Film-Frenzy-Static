@@ -2,18 +2,140 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/ff.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Film Frenzy</title>
   </head>
   <body>
     <header>
+      <section>
+        <img src="/ff.png" alt="Web icon" />
+        <nav>
+          <ul>
+            <li>Movies</li>
+            <li>TV Shows</li>
+            <li>
+              <img src="/notification_bell.png" alt="Notification Bell" />
+            </li>
+          </ul>
+        </nav>
+        <div>
+          <input type="text" id="search-query" placeholder="Search" />
+
+          <div>
+            <img src="iconmonstr-facebook-4.svg" alt="" />
+            <img src="iconmonstr-gmail-4.svg" alt="" />
+            <img src="iconmonstr-twitter-4.svg" alt="" />
+          </div>
+        </div>
+      </section>
+      <section>
+        <div>
+          <h1>Lights, Camera, Action</h1>
+          <h2>Discover the best movies with film frenzy</h2>
+        </div>
+        <div>
+          <a href="#">Trending</a>
+          <a href="#">Popular</a>
+          <a href="#">Recent Trailers</a>
+        </div>
+      </section>
     </header>
     <main>
+      <section class="trending">
+        <div>
+          <div>
+            <h2>Trending</h2>
+          </div>
+          <div>
+            <label>
+              <input type="radio" name="toggle" value="option1" checked />
+              Movies
+            </label>
+            <label>
+              <input type="radio" name="toggle" value="option2" />
+              Popular
+            </label>
+          </div>
+        </div>
+        <div>
+          <div>
+            <img src="/Marvel Movie Inspirational Quotes.jpeg" alt="" />
+            <div>
+              <p>8.41</p>
+            </div>
+            <p>08/12/2020</p>
+            <p>Avengers: Infinity war</p>
+          </div>
+        </div>
+      </section>
 
+      <section class="popular">
+        <div>
+          <div>
+            <h2>Popular</h2>
+          </div>
+          <div>
+            <label>
+              <input type="radio" name="toggle" value="option1" checked />
+              Movies
+            </label>
+            <label>
+              <input type="radio" name="toggle" value="option2" />
+              Popular
+            </label>
+          </div>
+        </div>
+        <div>
+          <div>
+            <img src="/Marvel Movie Inspirational Quotes.jpeg" alt="" />
+            <div>
+              <p>8.41</p>
+            </div>
+            <p>08/12/2020</p>
+            <p>Avengers: Infinity war</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="recent-trailers">
+        <div>
+          <div>
+            <h2>Recent Trailers</h2>
+          </div>
+          <div>
+            <label>
+              <input type="radio" name="toggle" value="option1" checked />
+              Movies
+            </label>
+            <label>
+              <input type="radio" name="toggle" value="option2" />
+              Popular
+            </label>
+          </div>
+        </div>
+        <div>
+          <div>
+            <img src="/Marvel Movie Inspirational Quotes.jpeg" alt="" />
+            <p>Avengers: Infinity war</p>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
-
+      <div>
+        <p>Copyright 2023</p>
+        <p>All Rights Reserved</p>
+      </div>
+      <div>
+        <nav>
+          <ul>
+            <li>Home</li>
+            <li>Trending</li>
+            <li>Popular</li>
+          </ul>
+        </nav>
+      </div>
     </footer>
     <script type="module" src="/src/main.ts"></script>
   </body>
