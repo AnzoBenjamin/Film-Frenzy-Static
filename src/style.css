@@ -1,4 +1,219 @@
 /*Main scss file*/
 /*Only add imports here*/
+/*Fonts*/
+/*Colors*/
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Source+Serif+Pro&display=swap");
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  3. Allow percentage-based heights in the application
+*/
+html, body {
+  height: 100%;
+}
+
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  color: #ffffff;
+}
+
+/*
+  6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+
+/*
+  8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+/*
+  Remove underline from link
+  */
+a {
+  text-decoration: none;
+}
+
+/*
+    Remove default list style
+*/
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.primary-heading {
+  font-size: 4.25rem;
+}
+
+.secondary-heading {
+  font-size: 2.625rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.btn {
+  font-size: 1.625rem;
+}
+
+.toggle-buttons label {
+  display: inline-block;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px 0 0 4px;
+}
+
+.toggle-buttons input[type=radio] {
+  display: none;
+}
+
+.toggle-buttons input[type=radio]:checked + label {
+  background-color: #ccc;
+}
+
+.btn-trending {
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  padding: 0.5rem 1.25rem;
+  grid-area: btn-trending;
+}
+
+.btn-popular {
+  color: #ad2831;
+  padding: 0.5rem 1.25rem;
+  background-color: #ffffff;
+  grid-area: btn-popular;
+}
+
+.btn-trailers {
+  color: #ffffff;
+  padding: 0.5rem 1.25rem;
+  background-color: #640d14;
+  margin: 0 2rem;
+  grid-area: btn-trailers;
+  text-align: center;
+}
+
+.header__links {
+  position: relative;
+  display: grid;
+  gap: 1.25rem;
+}
+.header__links--search {
+  background-color: transparent;
+  border-color: #ad2831;
+  color: #ffffff;
+  padding: 1rem 1rem 1rem 2rem;
+  font-size: 1rem;
+}
+.header__links--label {
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  top: 20%;
+  left: 2%;
+}
+
+.header {
+  position: relative;
+  height: 100vh;
+  background-image: linear-gradient(rgba(56, 4, 14, 0.95), rgba(56, 4, 14, 0.95)), url(/bg-img.jpg);
+  background-size: cover;
+}
+.header-logo {
+  width: 7rem;
+  height: 4.75rem;
+}
+.header-nav__list {
+  display: flex;
+  gap: 3.1875rem;
+}
+.header-nav__list > li {
+  text-transform: uppercase;
+  font-size: 1.625rem;
+  font-weight: 700;
+}
+.header-nav__icon {
+  width: 2.1rem;
+}
+.header__icon-container {
+  display: flex;
+  justify-content: space-between;
+}
+.header__icon-container > img {
+  filter: invert(1);
+}
+
+.section-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6875rem;
+  background-color: #38040e;
+}
+
+.section-hero {
+  padding-top: 10rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  display: flex;
+  gap: 15rem;
+}
+.section-hero__text {
+  display: grid;
+  gap: 9.625rem;
+}
+.section-hero__btn-area {
+  align-self: flex-end;
+  display: grid;
+  gap: 2.8125rem;
+  grid-template-areas: "btn-trending btn-popular" "btn-trailers btn-trailers";
+}
 
 /*# sourceMappingURL=style.css.map */

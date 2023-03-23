@@ -1,0 +1,38 @@
+.toggle-buttons label {
+  display: inline-block;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px 0 0 4px;
+}
+
+.toggle-buttons input[type="radio"] {
+  display: none;
+}
+
+.toggle-buttons input[type="radio"]:checked + label {
+  background-color: #ccc;
+}
+
+.btn-trending {
+  color: $color-white;
+  border: 2px solid $color-white;
+  padding: 0.5rem 1.25rem;
+  grid-area: btn-trending;
+}
+
+.btn-popular {
+  color: $color-primary-light;
+  padding: 0.5rem 1.25rem;
+  background-color: $color-white;
+  grid-area: btn-popular;
+}
+.btn-trailers {
+  color: $color-white;
+  padding: 0.5rem 1.25rem;
+  background-color: $color-primary;
+  margin: 0 2rem;
+  grid-area: btn-trailers;
+  text-align: center;
+}

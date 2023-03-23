@@ -1,0 +1,57 @@
+.header{
+    position: relative;
+    height: 100vh;
+    background-image: linear-gradient(rgba($color-primary-dark, 0.95), rgba($color-primary-dark, 0.95)), url(/bg-img.jpg);
+    background-size: cover;
+    &-logo{
+        width: 7rem;
+        height: 4.75rem;
+    }
+    &-nav__list{
+        display: flex;
+        gap: $nav-items-spacing;
+        >li{
+            text-transform: uppercase;
+            font-size: $font-size-medium;
+            font-weight: 700;
+        }
+    }
+    &-nav__icon{
+    width: 2.1rem;
+    }
+    &__icon-container{
+        display: flex;
+        justify-content: space-between;
+        &>img{
+            filter: invert(1);
+        }
+    }
+}
+.section-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.6875rem;
+    background-color: $color-primary-dark;
+}
+.section-hero{
+    padding-top: 10rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    display: flex;
+    gap: 15rem;
+
+    &__text{
+        display: grid;
+        gap: 9.625rem;
+    }
+    &__btn-area{
+        align-self: flex-end;
+        display: grid;
+        gap: 2.8125rem;
+        grid-template-areas: 'btn-trending btn-popular'
+                             'btn-trailers btn-trailers';
+    }
+}

@@ -7,37 +7,57 @@
     <title>Film Frenzy</title>
   </head>
   <body>
-    <header>
-      <section>
-        <img src="/ff.png" alt="Web icon" />
-        <nav>
-          <ul>
+    <header class="header">
+      <section class="section-nav">
+        <img src="/ff.png" alt="Web icon" class="header-logo" />
+        <nav class="header-nav">
+          <ul class="header-nav__list">
             <li>Movies</li>
-            <li>TV Shows</li>
+            <li>TV-Shows</li>
             <li>
-              <img src="/notification_bell.png" alt="Notification Bell" />
+              <img
+                src="/notification_bell.png"
+                alt="Notification Bell"
+                class="header-nav__icon"
+              />
             </li>
           </ul>
         </nav>
-        <div>
-          <input type="text" id="search-query" placeholder="Search" />
-
+        <div class="header__links">
           <div>
-            <img src="iconmonstr-facebook-4.svg" alt="" />
-            <img src="iconmonstr-gmail-4.svg" alt="" />
-            <img src="iconmonstr-twitter-4.svg" alt="" />
+            <label for="search-query" class="header__links--label"
+              ><img src="/search.svg" />
+            </label>
+            <input
+              type="text"
+              id="search-query"
+              placeholder="Search"
+              class="header__links--search"
+            />
+          </div>
+
+          <div class="header__icon-container">
+            <img src="iconmonstr-facebook-4.svg" alt="Facebook icon" />
+            <img src="iconmonstr-gmail-4.svg" alt="Gmail icon" />
+            <img src="iconmonstr-twitter-4.svg" alt="Twitter icon" />
           </div>
         </div>
       </section>
-      <section>
-        <div>
-          <h1>Lights, Camera, Action</h1>
-          <h2>Discover the best movies with film frenzy</h2>
+      <section class="section-hero">
+        <div class="section-hero__text">
+          <h1 class="primary-heading">
+            Lights,<br />
+            Camera,<br />
+            Action
+          </h1>
+          <h2 class="secondary-heading">
+            Discover the best movies with film frenzy
+          </h2>
         </div>
-        <div>
-          <a href="#">Trending</a>
-          <a href="#">Popular</a>
-          <a href="#">Recent Trailers</a>
+        <div class="section-hero__btn-area">
+          <a href="#" class="btn btn-trending">Trending</a>
+          <a href="#" class="btn btn-popular">Popular</a>
+          <a href="#" class="btn btn-trailers">Recent Trailers</a>
         </div>
       </section>
     </header>
@@ -47,14 +67,14 @@
           <div>
             <h2>Trending</h2>
           </div>
-          <div>
+          <div class="toggle-buttons">
             <label>
               <input type="radio" name="toggle" value="option1" checked />
-              Movies
+              Button 1
             </label>
             <label>
               <input type="radio" name="toggle" value="option2" />
-              Popular
+              Button 2
             </label>
           </div>
         </div>
@@ -75,14 +95,14 @@
           <div>
             <h2>Popular</h2>
           </div>
-          <div>
+          <div class="toggle-buttons">
             <label>
               <input type="radio" name="toggle" value="option1" checked />
-              Movies
+              Button 1
             </label>
             <label>
               <input type="radio" name="toggle" value="option2" />
-              Popular
+              Button 2
             </label>
           </div>
         </div>
@@ -103,14 +123,14 @@
           <div>
             <h2>Recent Trailers</h2>
           </div>
-          <div>
+          <div class="toggle-buttons">
             <label>
               <input type="radio" name="toggle" value="option1" checked />
-              Movies
+              Button 1
             </label>
             <label>
               <input type="radio" name="toggle" value="option2" />
-              Popular
+              Button 2
             </label>
           </div>
         </div>
