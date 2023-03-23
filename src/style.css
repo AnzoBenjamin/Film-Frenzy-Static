@@ -245,6 +245,12 @@ body {
   grid-template-areas: "btn-trending btn-popular" "btn-trailers btn-trailers";
 }
 
+.footer {
+  background-image: linear-gradient(to left, #ad2831, #38040e);
+  padding: 1.25rem;
+  align-items: center;
+}
+
 .section-trending {
   background-image: linear-gradient(to bottom right, #38040e, #ad2831);
   padding: 6.25rem 0;
