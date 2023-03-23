@@ -172,17 +172,22 @@ body {
   gap: 1.25rem;
 }
 .header__links--search {
+  border: none;
   background-color: transparent;
-  border-color: #ad2831;
+  border: 2px solid #ad2831;
   color: #ffffff;
-  padding: 1rem 1rem 1rem 2rem;
+  padding: 0.6rem 0.6rem 0.6rem 2rem;
   font-size: 1rem;
+}
+.header__links--search:focus {
+  outline: 2px solid #640d14;
+  box-shadow: 0 0.5rem 0.5rem rgba(100, 13, 20, 0.8);
 }
 .header__links--label {
   position: absolute;
   width: 1.5rem;
   height: 1.5rem;
-  top: 20%;
+  top: 12%;
   left: 2%;
 }
 
@@ -312,6 +317,11 @@ body {
 }
 .trailer-details__title {
   font-size: 1.625rem;
+}
+
+.seperator {
+  width: 100%;
+  border-bottom: 4px solid #ad2831;
 }
 
 /*# sourceMappingURL=style.css.map */

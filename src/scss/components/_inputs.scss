@@ -3,11 +3,16 @@
   display: grid;
   gap: 1.25rem;
   &--search {
+    border: none;
     background-color: transparent;
-    border-color: $color-primary-light;
+    border: 2px solid $color-primary-light;
     color: $color-white;
-    padding: 1rem 1rem 1rem 2rem;
+    padding: 0.6rem 0.6rem 0.6rem 2rem;
     font-size: $font-size-x-small;
+    &:focus {
+      outline: 2px solid $color-primary;
+      box-shadow: 0 0.5rem 0.5rem rgba($color: $color-primary, $alpha: 0.8);
+    }
   }
 
   &--label {
@@ -15,7 +20,7 @@
 
     width: 1.5rem;
     height: 1.5rem;
-    top: 20%;
+    top: 12%;
     left: 2%;
   }
 }
