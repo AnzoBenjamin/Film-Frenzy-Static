@@ -10,3 +10,21 @@
 .btn{
     font-size: $font-size-medium;
 }
+.jc-sb{
+    justify-content: space-between;
+}
+.container{
+    width: 90rem;
+    margin-inline: auto;
+}
+.grid{
+    display: grid;
+}
+
+.grid-2-cols{
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-cols{
+    grid-template-columns: 1fr 1fr 1fr;
+}

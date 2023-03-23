@@ -10,10 +10,11 @@
     &-nav__list{
         display: flex;
         gap: $nav-items-spacing;
+        align-items: center;
         >li{
             text-transform: uppercase;
-            font-size: $font-size-medium;
-            font-weight: 700;
+            font-size: $font-size-small;
+            font-weight: 500;
         }
     }
     &-nav__icon{

@@ -1,20 +1,28 @@
-.toggle-buttons label {
-  display: inline-block;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-  padding: 8px 16px;
-  cursor: pointer;
-  border-radius: 4px 0 0 4px;
-}
+.toggle-buttons{
+  display: flex;
+  align-items: center;
+  label {
+    display: inline-block;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: $font-size-medium;
+  }
 
-.toggle-buttons input[type="radio"] {
-  display: none;
-}
+  input[type="radio"] {
+    display: none;
+  }
 
-.toggle-buttons input[type="radio"]:checked + label {
-  background-color: #ccc;
+  input[type="radio"]:checked label {
+    background-color: #ccc;
+  }
+  &__movies{
+    background-color: $color-primary-light;
+  }
+  &__shows{
+    color: $color-primary-dark;
+    background-color: $color-white;
+  }
 }
-
 .btn-trending {
   color: $color-white;
   border: 2px solid $color-white;

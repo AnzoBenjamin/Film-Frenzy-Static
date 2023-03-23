@@ -1,0 +1,63 @@
+.section-trending{
+    background-image: linear-gradient(to bottom right, $color-primary-dark, $color-primary-light);
+    padding: 6.25rem 0;
+
+    &__heading{
+        margin-bottom: 5rem;
+    }
+}
+
+.movie{
+    column-gap: 12.5rem;
+    row-gap: 8rem;
+    &-container{
+        position: relative;
+    }
+    &-details{
+        text-align: center;
+        &__rating{
+            position: absolute;
+            color: $color-primary-dark;
+            background-color: $color-white;
+            aspect-ratio: 1;
+            border-radius: 10rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1.2rem;
+            top: 80%;
+            right: 0;
+            font-size: $font-size-medium;
+            transform: translate(50%,10%);
+        }
+        &__release-date{
+            padding: .5rem;
+        }
+        &__title{
+            font-size: $font-size-medium;
+        }
+    }
+}
+.section-popular{
+    background-image: linear-gradient(to bottom left, $color-primary-light, $color-primary-dark);
+    padding: 6.25rem 0;
+}
+
+.section-trailers{
+    background-image: linear-gradient(rgba($color-primary-dark, 0.8), rgba($color-primary-dark, 0.8)), url(/trailer-bg.jpg);   
+    padding: 6.25rem 0;
+    background-position: top right;
+}
+.trailer{
+    display: flex;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 2.625rem;
+
+    &-details{
+        text-align: center;
+        &__title{
+            font-size: $font-size-medium;
+        }
+    }
+
+}
