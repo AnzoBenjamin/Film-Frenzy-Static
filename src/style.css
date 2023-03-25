@@ -112,11 +112,16 @@ body {
 }
 
 .grid-2-cols {
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .grid-3-cols {
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
 }
 
 .toggle-buttons {
@@ -127,7 +132,7 @@ body {
   display: inline-block;
   padding: 8px 16px;
   cursor: pointer;
-  font-size: 1.625rem;
+  font-size: 1.375rem;
 }
 .toggle-buttons input[type=radio] {
   display: none;
@@ -206,10 +211,20 @@ body {
   gap: 3.1875rem;
   align-items: center;
 }
-.header-nav__list > li {
+.header-nav__list--item {
+  position: relative;
   text-transform: uppercase;
   font-size: 1.375rem;
   font-weight: 500;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.header-nav__list--icon {
+  filter: invert(1);
+  height: 1.6rem;
+  width: 1.6rem;
+  cursor: pointer;
 }
 .header-nav__icon {
   width: 2.1rem;
@@ -220,6 +235,21 @@ body {
 }
 .header__icon-container > img {
   filter: invert(1);
+}
+
+.dropdown-menu {
+  padding: 2rem 1.5rem;
+  display: grid;
+  position: absolute;
+  width: 12rem;
+  top: 100%;
+  left: 50%;
+  transform: translate(-20%, 10%);
+  gap: 1.5rem;
+  font-size: 1rem;
+  background-color: #38040e;
+  box-shadow: 0 5px 1rem rgba(173, 40, 49, 0.9);
+  z-index: 100;
 }
 
 .section-nav {
@@ -254,6 +284,7 @@ body {
   background-image: linear-gradient(to left, #ad2831, #38040e);
   padding: 1.25rem;
   align-items: center;
+  font-size: 1rem;
 }
 
 .section-trending {
@@ -265,8 +296,8 @@ body {
 }
 
 .movie {
-  column-gap: 12.5rem;
-  row-gap: 8rem;
+  column-gap: 6rem;
+  row-gap: 5rem;
 }
 .movie-container {
   position: relative;
@@ -283,8 +314,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1.2rem;
-  top: 80%;
+  padding: 0.8rem;
+  top: 75%;
   right: 0;
   font-size: 1.625rem;
   transform: translate(50%, 10%);
@@ -308,8 +339,8 @@ body {
 }
 
 .trailer {
-  display: flex;
-  grid-template-columns: 1fr 3fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 2.625rem;
 }
 .trailer-details {
@@ -317,6 +348,15 @@ body {
 }
 .trailer-details__title {
   font-size: 1.625rem;
+}
+.trailer-container {
+  position: relative;
+  width: 100%;
+  height: 20rem;
+}
+.trailer-container__video {
+  width: 100%;
+  height: 100%;
 }
 
 .seperator {

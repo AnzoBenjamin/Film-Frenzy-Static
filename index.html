@@ -12,14 +12,31 @@
         <img src="/ff.png" alt="Web icon" class="header-logo" />
         <nav class="header-nav">
           <ul class="header-nav__list">
-            <li>Movies</li>
-            <li>TV-Shows</li>
-            <li>
+            <li class="header-nav__list--item">Movies<span><img src="/arrows_square_down.svg" alt="" class="header-nav__list--icon"></span>
+              <ul class="dropdown-menu hidden">
+                <li class="dropdown-menu__item">Popular</li>
+                <li class="dropdown-menu__item">Trending</li>
+                <li class="dropdown-menu__item">Recent Trailers</li>
+              </ul>
+            </li>
+            <li class="header-nav__list--item">TV-Shows<span><img src="/arrows_square_down.svg" alt="" class="header-nav__list--icon"></span>
+              <ul class="dropdown-menu hidden">
+                <li class="dropdown-menu__item">Popular</li>
+                <li class="dropdown-menu__item">Trending</li>
+                <li class="dropdown-menu__item">Recent Trailers</li>
+              </ul>
+            </li>
+            <li class="header-nav__list--item hidden">
               <img
                 src="/notification_bell.png"
                 alt="Notification Bell"
                 class="header-nav__icon"
               />
+              <ul class="dropdown-menu">
+                <li class="dropdown-menu__item">Notifications</li>
+                <li class="dropdown-menu__item">Reviews</li>
+                <li class="dropdown-menu__item">Profile</li>
+              </ul>
             </li>
           </ul>
         </nav>
@@ -268,23 +285,37 @@
             </div>
           </div>
           <div class="trailer">
-
             <figure class="trailer-container">
-              <img src="/Marvel Movie Inspirational Quotes.jpeg" alt="" />
+              <iframe
+                src="https://www.youtube.com/embed/VIDEO_ID"
+                frameborder="0"
+                allowfullscreen
+                class="trailer-container__video"
+              ></iframe>
               <figcaption class="trailer-details">
                 <p class="trailer-details__title">Avengers: Infinity war</p>
               </figcaption>
             </figure>
 
             <figure class="trailer-container">
-              <img src="/Marvel Movie Inspirational Quotes.jpeg" alt="" />
+              <iframe
+                src="https://www.youtube.com/embed/VIDEO_ID"
+                frameborder="0"
+                allowfullscreen
+                class="trailer-container__video"
+              ></iframe>
               <figcaption class="trailer-details">
                 <p class="trailer-details__title">Avengers: Infinity war</p>
               </figcaption>
             </figure>
 
             <figure class="trailer-container">
-              <img src="/Marvel Movie Inspirational Quotes.jpeg" alt="" />
+              <iframe
+                src="https://www.youtube.com/embed/VIDEO_ID"
+                frameborder="0"
+                allowfullscreen
+                class="trailer-container__video"
+              ></iframe>
               <figcaption class="trailer-details">
                 <p class="trailer-details__title">Avengers: Infinity war</p>
               </figcaption>
@@ -293,19 +324,21 @@
         </div>
       </section>
     </main>
-    <footer class="footer flex jc-sb">
-      <div class="footer__left">
-        <p>Copyright 2023</p>
-        <p>All Rights Reserved</p>
-      </div>
-      <div class="footer__rifht">
-        <nav>
-          <ul>
-            <li>Home</li>
-            <li>Trending</li>
-            <li>Popular</li>
-          </ul>
-        </nav>
+    <footer class="footer">
+      <div class="container flex jc-sb">
+        <div class="footer__left">
+          <p>Copyright 2023</p>
+          <p>All Rights Reserved</p>
+        </div>
+        <div class="footer__rifht">
+          <nav>
+            <ul>
+              <li>Home</li>
+              <li>Trending</li>
+              <li>Popular</li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </footer>
     <script type="module" src="/src/main.ts"></script>

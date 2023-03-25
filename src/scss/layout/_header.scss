@@ -11,10 +11,20 @@
         display: flex;
         gap: $nav-items-spacing;
         align-items: center;
-        >li{
+        &--item{
+            position: relative;
             text-transform: uppercase;
             font-size: $font-size-small;
             font-weight: 500;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+        &--icon{
+            filter: invert(1);
+            height: 1.6rem;
+            width: 1.6rem;
+            cursor: pointer;
         }
     }
     &-nav__icon{
@@ -27,6 +37,20 @@
             filter: invert(1);
         }
     }
+}
+.dropdown-menu{
+    padding:2rem 1.5rem;
+    display: grid;
+    position: absolute;
+    width: 12rem;
+    top: 100%;
+    left: 50%;
+    transform: translate(-20%, 10%);
+    gap: 1.5rem;
+    font-size: $font-size-x-small;
+    background-color: $color-primary-dark;
+    box-shadow: 0 5px 1rem rgba($color-primary-light, 0.9);
+    z-index: 100;
 }
 .section-nav{
     display: flex;
