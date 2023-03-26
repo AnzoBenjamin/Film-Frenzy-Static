@@ -7,39 +7,77 @@
     <title>Film Frenzy</title>
   </head>
   <body>
+    <!------------------------------------------------------------------------------------------>
+    <!--HEADER-->
+    <!------------------------------------------------------------------------------------------>
     <header class="header">
+      <!--Navigation-->
+      <!------------------------------------------------------------------------------------------>
       <section class="section-nav">
         <img src="/ff.png" alt="Web icon" class="header-logo" />
+
         <nav class="header-nav">
           <ul class="header-nav__list">
-            <li class="header-nav__list--item">Movies<span><img src="/arrows_square_down.svg" alt="" class="header-nav__list--icon"></span>
-              <ul class="dropdown-menu hidden">
-                <li class="dropdown-menu__item">Popular</li>
-                <li class="dropdown-menu__item">Trending</li>
-                <li class="dropdown-menu__item">Recent Trailers</li>
-              </ul>
+            <li class="header-nav__list--item">
+              <span>Movies</span>
+
+              <div class="dropdown">
+                <span class="dropdown-btn">
+                  <img
+                    src="/arrows_square_down.svg"
+                    alt=""
+                    class="header-nav__list--icon"
+                  />
+                </span>
+
+                <ul class="dropdown-menu">
+                  <li class="dropdown-menu__item"><a href="">Popular</a></li>
+                  <li class="dropdown-menu__item"><a href="">Trending</a></li>
+                  <li class="dropdown-menu__item">
+                    <a href="">Recent Trailers</a>
+                  </li>
+                </ul>
+              </div>
             </li>
-            <li class="header-nav__list--item">TV-Shows<span><img src="/arrows_square_down.svg" alt="" class="header-nav__list--icon"></span>
-              <ul class="dropdown-menu hidden">
-                <li class="dropdown-menu__item">Popular</li>
-                <li class="dropdown-menu__item">Trending</li>
-                <li class="dropdown-menu__item">Recent Trailers</li>
-              </ul>
+
+            <li class="header-nav__list--item">
+              <span>TV-Shows</span>
+              <div class="dropdown">
+                <span class="dropdown-btn">
+                  <img
+                    src="/arrows_square_down.svg"
+                    alt=""
+                    class="header-nav__list--icon"
+                  />
+                </span>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-menu__item"><a href="">Popular</a></li>
+                  <li class="dropdown-menu__item"><a href="">Trending</a></li>
+                  <li class="dropdown-menu__item">
+                    <a href="">Recent Trailers</a>
+                  </li>
+                </ul>
+              </div>
             </li>
-            <li class="header-nav__list--item hidden">
-              <img
-                src="/notification_bell.png"
-                alt="Notification Bell"
-                class="header-nav__icon"
-              />
-              <ul class="dropdown-menu">
-                <li class="dropdown-menu__item">Notifications</li>
-                <li class="dropdown-menu__item">Reviews</li>
-                <li class="dropdown-menu__item">Profile</li>
-              </ul>
+            <li class="header-nav__list--item">
+              <div class="dropdown">
+                <img
+                  src="/notification_bell.png"
+                  alt="Notification Bell"
+                  class="header-nav__icon"
+                />
+                <ul class="dropdown-menu">
+                  <li class="dropdown-menu__item">
+                    <a href="">Notifications</a>
+                  </li>
+                  <li class="dropdown-menu__item"><a href="">Reviews</a></li>
+                  <li class="dropdown-menu__item"><a href="">Profile</a></li>
+                </ul>
+              </div>
             </li>
           </ul>
         </nav>
+
         <div class="header__links">
           <div>
             <label for="search-query" class="header__links--label"
@@ -54,18 +92,22 @@
           </div>
 
           <div class="header__icon-container">
-            <img src="iconmonstr-facebook-4.svg" alt="Facebook icon" />
-            <img src="iconmonstr-gmail-4.svg" alt="Gmail icon" />
-            <img src="iconmonstr-twitter-4.svg" alt="Twitter icon" />
+            <a href=""
+              ><img src="iconmonstr-facebook-4.svg" alt="Facebook icon"
+            /></a>
+            <a href=""><img src="iconmonstr-gmail-4.svg" alt="Gmail icon" /></a>
+            <a href=""
+              ><img src="iconmonstr-twitter-4.svg" alt="Twitter icon"
+            /></a>
           </div>
         </div>
       </section>
       <section class="section-hero">
         <div class="section-hero__text">
-          <h1 class="primary-heading">
-            Lights,<br />
-            Camera,<br />
-            Action
+          <h1 class="primary-heading grid grid-1-col">
+            <span> Lights, </span>
+            <span> Camera, </span>
+            <span> Action </span>
           </h1>
           <h2 class="secondary-heading">
             Discover the best movies with film frenzy
@@ -79,190 +121,38 @@
       </section>
     </header>
     <main>
-      <section class="section-trending">
-        <div class="container">
-          <div class="flex jc-sb section-trending__heading">
-            <div>
-              <h2 class="secondary-heading">Trending</h2>
-            </div>
-            <div class="toggle-buttons">
-              <label class="toggle-buttons__movies">
-                <input type="radio" name="toggle" value="1" checked />
-                Movies
-              </label>
-              <label class="toggle-buttons__shows">
-                <input type="radio" name="toggle" value="2" />
-                TV Shows
-              </label>
-            </div>
-          </div>
-          <div class="grid grid-3-cols movie">
-            <figure class="movie-container">
-              <img
-                src="/Marvel Movie Inspirational Quotes.jpeg"
-                alt=""
-                class="movie-container__img"
-              />
-              <figcaption class="movie-details">
-                <p class="movie-details__rating">8.41</p>
-                <p class="movie-details__release-date">08/12/2020</p>
-                <p class="movie-details__title">Avengers: Infinity war</p>
-              </figcaption>
-            </figure>
-            <figure class="movie-container">
-              <img
-                src="/Marvel Movie Inspirational Quotes.jpeg"
-                alt=""
-                class="movie-container__img"
-              />
-              <figcaption class="movie-details">
-                <p class="movie-details__rating">8.41</p>
-                <p class="movie-details__release-date">08/12/2020</p>
-                <p class="movie-details__title">Avengers: Infinity war</p>
-              </figcaption>
-            </figure>
-            <figure class="movie-container">
-              <img
-                src="/Marvel Movie Inspirational Quotes.jpeg"
-                alt=""
-                class="movie-container__img"
-              />
-              <figcaption class="movie-details">
-                <p class="movie-details__rating">8.41</p>
-                <p class="movie-details__release-date">08/12/2020</p>
-                <p class="movie-details__title">Avengers: Infinity war</p>
-              </figcaption>
-            </figure>
-            <figure class="movie-container">
-              <img
-                src="/Marvel Movie Inspirational Quotes.jpeg"
-                alt=""
-                class="movie-container__img"
-              />
-              <figcaption class="movie-details">
-                <p class="movie-details__rating">8.41</p>
-                <p class="movie-details__release-date">08/12/2020</p>
-                <p class="movie-details__title">Avengers: Infinity war</p>
-              </figcaption>
-            </figure>
-            <figure class="movie-container">
-              <img
-                src="/Marvel Movie Inspirational Quotes.jpeg"
-                alt=""
-                class="movie-container__img"
-              />
-              <figcaption class="movie-details">
-                <p class="movie-details__rating">8.41</p>
-                <p class="movie-details__release-date">08/12/2020</p>
-                <p class="movie-details__title">Avengers: Infinity war</p>
-              </figcaption>
-            </figure>
-            <figure class="movie-container">
-              <img
-                src="/Marvel Movie Inspirational Quotes.jpeg"
-                alt=""
-                class="movie-container__img"
-              />
-              <figcaption class="movie-details">
-                <p class="movie-details__rating">8.41</p>
-                <p class="movie-details__release-date">08/12/2020</p>
-                <p class="movie-details__title">Avengers: Infinity war</p>
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-      </section>
-      <div class="seperator"></div>
       <section class="section-popular">
         <div class="container">
           <div class="flex jc-sb section-trending__heading">
             <div>
-              <h2 class="secondary-heading">Popular</h2>
+              <select name="paramaters" id="db-parms" class="query-parms">
+                <option value="1" class="query-parms__item">Trending</option>
+                <option value="2" class="query-parms__item">Popular</option>
+                <option value="3" class="query-parms__item">
+                  Highest Rated
+                </option>
+              </select>
             </div>
             <div class="toggle-buttons">
-              <label class="toggle-buttons__movies">
-                <input type="radio" name="toggle" value="1" checked />
-                Movies
-              </label>
-              <label class="toggle-buttons__shows">
-                <input type="radio" name="toggle" value="2" />
-                TV Shows
-              </label>
+              <label class="toggle-buttons__movies">Movies</label>
+              <input type="radio" id="Movies" name="toggle" value="1" class="toggle-buttons__input" checked />
+
+              <label class="toggle-buttons__shows">TV Shows </label>
+              <input type="radio" name="toggle" value="2" class="toggle-buttons__input"/>
             </div>
           </div>
-          <div class="grid grid-3-cols movie">
-            <figure class="movie-container">
-              <img
-                src="/Marvel Movie Inspirational Quotes.jpeg"
-                alt=""
-                class="movie-container__img"
-              />
-              <figcaption class="movie-details">
-                <p class="movie-details__rating">8.41</p>
-                <p class="movie-details__release-date">08/12/2020</p>
-                <p class="movie-details__title">Avengers: Infinity war</p>
-              </figcaption>
-            </figure>
-            <figure class="movie-container">
-              <img
-                src="/Marvel Movie Inspirational Quotes.jpeg"
-                alt=""
-                class="movie-container__img"
-              />
-              <figcaption class="movie-details">
-                <p class="movie-details__rating">8.41</p>
-                <p class="movie-details__release-date">08/12/2020</p>
-                <p class="movie-details__title">Avengers: Infinity war</p>
-              </figcaption>
-            </figure>
-            <figure class="movie-container">
-              <img
-                src="/Marvel Movie Inspirational Quotes.jpeg"
-                alt=""
-                class="movie-container__img"
-              />
-              <figcaption class="movie-details">
-                <p class="movie-details__rating">8.41</p>
-                <p class="movie-details__release-date">08/12/2020</p>
-                <p class="movie-details__title">Avengers: Infinity war</p>
-              </figcaption>
-            </figure>
-            <figure class="movie-container">
-              <img
-                src="/Marvel Movie Inspirational Quotes.jpeg"
-                alt=""
-                class="movie-container__img"
-              />
-              <figcaption class="movie-details">
-                <p class="movie-details__rating">8.41</p>
-                <p class="movie-details__release-date">08/12/2020</p>
-                <p class="movie-details__title">Avengers: Infinity war</p>
-              </figcaption>
-            </figure>
-            <figure class="movie-container">
-              <img
-                src="/Marvel Movie Inspirational Quotes.jpeg"
-                alt=""
-                class="movie-container__img"
-              />
-              <figcaption class="movie-details">
-                <p class="movie-details__rating">8.41</p>
-                <p class="movie-details__release-date">08/12/2020</p>
-                <p class="movie-details__title">Avengers: Infinity war</p>
-              </figcaption>
-            </figure>
-            <figure class="movie-container">
-              <img
-                src="/Marvel Movie Inspirational Quotes.jpeg"
-                alt=""
-                class="movie-container__img"
-              />
-              <figcaption class="movie-details">
-                <p class="movie-details__rating">8.41</p>
-                <p class="movie-details__release-date">08/12/2020</p>
-                <p class="movie-details__title">Avengers: Infinity war</p>
-              </figcaption>
-            </figure>
+          <div class="grid grid-3-cols display"></div>
+          <div class="btn-area">
+            <ul class="btn-area__links">
+              <li><a href="#" class="btn-link btn">1</a></li>
+              <li><a href="#" class="btn-link btn">2</a></li>
+              <li><a href="#" class="btn-link btn">3</a></li>
+              <li><a href="#" class="btn-link btn">4</a></li>
+              <li><a href="#" class="btn-link btn">5</a></li>
+              <li><a href="#" class="btn-link btn">6</a></li>
+              <li><a href="#" class="btn-link btn">7</a></li>
+              <li><a href="#" class="btn-link btn">8</a></li>
+            </ul>
           </div>
         </div>
       </section>
@@ -285,6 +175,11 @@
             </div>
           </div>
           <div class="trailer">
+            <img
+              src="/arrows_square_left.png"
+              alt=""
+              class="trailer__arrow-left"
+            />
             <figure class="trailer-container">
               <iframe
                 src="https://www.youtube.com/embed/VIDEO_ID"
@@ -320,6 +215,11 @@
                 <p class="trailer-details__title">Avengers: Infinity war</p>
               </figcaption>
             </figure>
+            <img
+              src="/arrows_square_right.png"
+              alt=""
+              class="trailer__arrow-right"
+            />
           </div>
         </div>
       </section>
