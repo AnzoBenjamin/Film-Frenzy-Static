@@ -120,7 +120,7 @@
         </div>
       </section>
     </header>
-    <main>
+    <main class="main">
       <section class="section-popular">
         <div class="container">
           <div class="flex jc-sb section-trending__heading">
@@ -128,32 +128,30 @@
               <select name="paramaters" id="db-parms" class="query-parms">
                 <option value="1" class="query-parms__item">Trending</option>
                 <option value="2" class="query-parms__item">Popular</option>
-                <option value="3" class="query-parms__item">
-                  Highest Rated
-                </option>
               </select>
             </div>
             <div class="toggle-buttons">
-              <label class="toggle-buttons__movies">Movies</label>
-              <input type="radio" id="Movies" name="toggle" value="1" class="toggle-buttons__input" checked />
+              <input
+                type="radio"
+                id="movies"
+                name="toggle"
+                value="1"
+                class="toggle-buttons__input"
+                checked
+              />
+              <label class="toggle-buttons__movies" for="movies">Movies</label>
 
-              <label class="toggle-buttons__shows">TV Shows </label>
-              <input type="radio" name="toggle" value="2" class="toggle-buttons__input"/>
+              <input
+                type="radio"
+                id="shows"
+                name="toggle"
+                value="2"
+                class="toggle-buttons__input"
+              />
+              <label class="toggle-buttons__shows" for="shows">TV Shows </label>
             </div>
           </div>
           <div class="grid grid-3-cols display"></div>
-          <div class="btn-area">
-            <ul class="btn-area__links">
-              <li><a href="#" class="btn-link btn">1</a></li>
-              <li><a href="#" class="btn-link btn">2</a></li>
-              <li><a href="#" class="btn-link btn">3</a></li>
-              <li><a href="#" class="btn-link btn">4</a></li>
-              <li><a href="#" class="btn-link btn">5</a></li>
-              <li><a href="#" class="btn-link btn">6</a></li>
-              <li><a href="#" class="btn-link btn">7</a></li>
-              <li><a href="#" class="btn-link btn">8</a></li>
-            </ul>
-          </div>
         </div>
       </section>
 
@@ -163,15 +161,26 @@
             <div>
               <h2 class="secondary-heading">Recent Trailers</h2>
             </div>
+
             <div class="toggle-buttons">
-              <label class="toggle-buttons__movies">
-                <input type="radio" name="toggle" value="1" checked />
-                Movies
-              </label>
-              <label class="toggle-buttons__shows">
-                <input type="radio" name="toggle" value="2" />
-                TV Shows
-              </label>
+              <input
+                type="radio"
+                id="movies"
+                name="toggle"
+                value="1"
+                class="toggle-buttons__input"
+                checked
+              />
+              <label class="toggle-buttons__movies" for="movies">Movies</label>
+
+              <input
+                type="radio"
+                id="shows"
+                name="toggle"
+                value="2"
+                class="toggle-buttons__input"
+              />
+              <label class="toggle-buttons__shows" for="shows">TV Shows </label>
             </div>
           </div>
           <div class="trailer">
